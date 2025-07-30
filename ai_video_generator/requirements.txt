@@ -3,4 +3,4 @@ openai
 requests
 moviepy
 Pillow
-elevenlabs
+python-dotenv
