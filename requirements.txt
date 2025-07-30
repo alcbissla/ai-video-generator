@@ -1,6 +1,0 @@
-flask
-openai
-requests
-moviepy
-Pillow
-python-dotenv
