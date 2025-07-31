@@ -8,6 +8,6 @@ services:
     startCommand: python main.py
     envVars:
       - key: OPENAI_API_KEY
-        value: your_openai_api_key
+        value: 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
       - key: ELEVENLABS_API_KEY
-        value: your_elevenlabs_api_key
+        value: sk_2bacb3f286f7114a6042f5a6b66f83ca6b375a2ef3667f12
