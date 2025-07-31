@@ -1,10 +1,12 @@
 from moviepy.editor import TextClip, CompositeVideoClip, AudioFileClip
 import os
-from elevenlabs import generate, set_api_key
+import requests
 
 def make_video(text, resolution=(720, 1280)):
+    from elevenlabs import generate, set_api_key
     set_api_key(os.getenv("ELEVENLABS_API_KEY"))
     audio = generate(text, voice="Bella")
+    
     os.makedirs("static", exist_ok=True)
     with open("static/voice.mp3", "wb") as f:
         f.write(audio)
