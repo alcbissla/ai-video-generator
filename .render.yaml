@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-video-generator
+    env: python
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your_openai_api_key
+      - key: ELEVENLABS_API_KEY
+        value: your_elevenlabs_api_key
